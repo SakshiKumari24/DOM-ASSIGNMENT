@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseover</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #mouseover{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            cursor: pointer;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mouseOverDiv">
+        <p>Hover me!</p>
+    </div>
+    <script>
+        document.getElementById("mouseOverDiv").addEventListener("mouseover", function() {
+            this.style.backgroundColor = "lightgreen";
+        });
+    </script>
+
+</body>
+</html>

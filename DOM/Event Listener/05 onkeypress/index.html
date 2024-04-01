@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onkeypress</title>
+    <style>
+        #display{
+            color: orange;
+        }
+        #input-box{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="display"></h1>
+        <input id="input-box"type="text" placeholder="Type something...">
+    </div>
+    <script>
+        let inputbox=document.getElementById('input-box')
+        let display=document.getElementById('display')
+        inputbox.addEventListener('keypress' ,function(){
+            display.innerText="you have pressed" 
+        });
+    </script>
+</body>
+</html>

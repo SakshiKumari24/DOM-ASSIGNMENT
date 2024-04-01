@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    padding:20px;
+    box-shadow: 0 0 5px black;
+}
+button{
+    padding:5px 15px;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+#counter{
+    padding: 5px 15px;
+    font-size: 25px;
+    border: 1px solid black;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keydown</title>
+    <style>
+        #display{
+            font-size: 50px;
+        }
+        #container{
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="display">Press any key </div>
+</div>
+<script>
+    let container = document.getElementById('container');
+    let display=document.getElementById('display');
+
+    document.addEventListener('keypress',function(){
+        display.style.color= "green";
+        display.innerText="key up";
+    });
+    document.addEventListener('keydown',function(){
+        display.style.color="red";
+        display.innertext="key down";
+    });
+</script>
+</body>
+</html>
